@@ -1,0 +1,26 @@
+[
+    {
+        "texto_original": "ddddd",
+        "probabilidad": 0.4366,
+        "clasificacion": "Cibersexting",
+        "fecha": "2025-07-01T19:19:28.347188",
+        "id": 1,
+        "fecha_creacion": "2025-07-01T19:19:29.451440"
+    },
+    {
+        "texto_original": "fuck you ass",
+        "probabilidad": 0.9617,
+        "clasificacion": "CiberGrooming",
+        "fecha": "2025-07-01T19:35:28.192621",
+        "id": 2,
+        "fecha_creacion": "2025-07-01T19:35:28.243042"
+    },
+    {
+        "texto_original": "\"Hey, wanna send me some pics? 😘\"",
+        "probabilidad": 0.7452,
+        "clasificacion": "Cibersexting",
+        "fecha": "2025-07-01T19:36:13.557288",
+        "id": 3,
+        "fecha_creacion": "2025-07-01T19:36:13.611107"
+    }
+]
