@@ -1,16 +1,8 @@
 [
     {
-        "texto_original": "ddddd",
-        "probabilidad": 0.4366,
-        "clasificacion": "Cibersexting",
-        "fecha": "2025-07-01T19:19:28.347188",
-        "id": 1,
-        "fecha_creacion": "2025-07-01T19:19:29.451440"
-    },
-    {
         "texto_original": "fuck you ass",
         "probabilidad": 0.9617,
-        "clasificacion": "CiberGrooming",
+        "clasificacion": "Cibersexting",
         "fecha": "2025-07-01T19:35:28.192621",
         "id": 2,
         "fecha_creacion": "2025-07-01T19:35:28.243042"
@@ -22,5 +14,61 @@
         "fecha": "2025-07-01T19:36:13.557288",
         "id": 3,
         "fecha_creacion": "2025-07-01T19:36:13.611107"
+    },
+    {
+        "texto_original": "hello",
+        "probabilidad": 0.0,
+        "clasificacion": "Normal",
+        "fecha": "2025-07-02T15:07:50.887274",
+        "id": 4,
+        "fecha_creacion": "2025-07-02T15:07:50.889276"
+    },
+    {
+        "texto_original": "fuck you ass\t",
+        "probabilidad": 0.962,
+        "clasificacion": "Depredador",
+        "fecha": "2025-07-02T15:08:05.720007",
+        "id": 5,
+        "fecha_creacion": "2025-07-02T15:08:08.611178"
+    },
+    {
+        "texto_original": "fuck you ass",
+        "probabilidad": 0.962,
+        "clasificacion": "Depredador",
+        "fecha": "2025-07-02T15:20:29.460149",
+        "id": 6,
+        "fecha_creacion": "2025-07-02T15:20:30.064557"
+    },
+    {
+        "texto_original": "fuck you ass",
+        "probabilidad": 0.962,
+        "clasificacion": "Depredador",
+        "fecha": "2025-07-02T15:21:35.319309",
+        "id": 7,
+        "fecha_creacion": "2025-07-02T15:21:36.158986"
+    },
+    {
+        "texto_original": "fuck you ass",
+        "probabilidad": 0.962,
+        "clasificacion": "CiberGrooming",
+        "fecha": "2025-07-02T15:22:31.355451",
+        "id": 8,
+        "fecha_creacion": "2025-07-02T15:22:31.779372"
+    },
+    {
+        "texto_original": "your sexi",
+        "probabilidad": 0.9512,
+        "clasificacion": "CiberGrooming",
+        "fecha": "2025-07-02T15:22:42.254090",
+        "id": 9,
+        "fecha_creacion": "2025-07-02T15:22:42.458596"
+    },
+    {
+        "texto_original": "\"Hey, wanna send me some pics? 😘\"",
+        "probabilidad": 0.7376,
+        "clasificacion": "CiberGrooming",
+        "fecha": "2025-07-02T15:24:20.417462",
+        "id": 10,
+        "fecha_creacion": "2025-07-02T15:24:21.374559"
     }
 ]
