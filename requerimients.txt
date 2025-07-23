@@ -1,0 +1,10 @@
+Flask
+flask-cors
+joblib
+pymongo
+bcrypt
+nltk
+unidecode
+scikit-learn
+torch
+transformers

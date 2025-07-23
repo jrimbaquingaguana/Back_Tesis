@@ -8,17 +8,33 @@ import os
 from nltk.tokenize import word_tokenize
 from unidecode import unidecode
 from datetime import datetime
-
+import torch
 app = Flask(__name__)
 CORS(app)
 
 # ---------------- CONFIG ----------------
 
-ruta_modelo = r"C:\Users\richa\Desktop\tesis_bien\PervertedJusticeDataset"
-modelo = load(os.path.join(ruta_modelo, "modelo_lgbm_bert_gpu_mejorado.joblib"))
-encoder = load(os.path.join(ruta_modelo, "bert_encoder.joblib"))
+# Ruta de modelos (desde variable de entorno o por defecto)
+ruta_modelo = os.getenv("RUTA_MODELO", "./modelos")
+modelo_path = os.path.join(ruta_modelo, "modelo_lgbm_bert_cpu.joblib")
+encoder_path = os.path.join(ruta_modelo, "bert_encoder.joblib")
 
-client = MongoClient("mongodb://localhost:27017/")
+# Verificar existencia de archivos
+if not os.path.isfile(modelo_path):
+    raise FileNotFoundError(f"Modelo no encontrado en {modelo_path}")
+if not os.path.isfile(encoder_path):
+    raise FileNotFoundError(f"Encoder no encontrado en {encoder_path}")
+
+# Forzar uso de CPU
+device = torch.device("cpu")
+
+# Cargar modelo LGBM (entrenado con CPU)
+modelo = load(modelo_path)
+
+# Cargar encoder BERT entrenado (guardado con joblib)
+encoder = load(encoder_path)
+
+client = MongoClient(os.getenv("MONGO_URL", "mongodb://localhost:27017/"))
 db = client["tesis"]
 col_usuarios = db["usuarios"]
 col_historial = db["historial_mensajes"]
